@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const data = [
   { id: 1, value: 0 },
@@ -7,17 +7,29 @@ const data = [
 ];
 
 function Counter(props) {
-  const { value } = props;
+    const { value } = props;
+    const [count, setCount] = useState(value);
+
+    const handleIncrement = () => {
+        setCount(count + 1);
+    }
+
+    const handleDecrement = () => {
+        setCount(count - 1);
+    }
+
   return (
     <div>
-      <b>{value}</b>
+      <b>{count}</b>
       <div>
-        <button>-</button>
-        <button>+</button>
+        <button onClick={handleDecrement}>-</button>
+        <button onClick={handleIncrement}>+</button>
       </div>
     </div>
   );
 }
+
+
 
 function App() {
   return (

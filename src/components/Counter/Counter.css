@@ -1,0 +1,29 @@
+.counter-wrapper {
+    flex-grow: 1;
+    padding-top: 70px;
+    border-left: 3px solid black;
+}
+
+.counter-text {
+    font-size: 2.5em;
+}
+
+.counter-button {
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: #4cb04f;
+}
+
+.subtract-button {
+    background-color: #f60056;
+    margin-left: 10px;
+}

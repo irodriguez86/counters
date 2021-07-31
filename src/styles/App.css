@@ -1,0 +1,22 @@
+.main-wrapper {
+    font-family: Arial, serif;
+}
+
+.counters-tittle {
+    font-size: 5em;
+    text-align: center;
+    vertical-align: center;
+    color: #ffffff;
+    background-color: #27a496;
+    padding: 30px;
+    border: 3px solid #46515a;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.counter-list {
+    display: flex;
+    height: 200px;
+    text-align: center;
+    border-right: 3px solid black;
+}

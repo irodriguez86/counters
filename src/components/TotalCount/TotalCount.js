@@ -1,4 +1,5 @@
 import React from "react";
+import "./TotalCount.css";
 
 export default function TotalCount({totalCount}) {
 

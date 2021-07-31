@@ -1,0 +1,14 @@
+.total-count-wrapper {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #46515a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.total-counter {
+    margin-left: 5px;
+}

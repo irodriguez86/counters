@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./styles/App.css";
 import Counter from "./components/Counter/Counter";
 import TotalCount from "./components/TotalCount/TotalCount";
 

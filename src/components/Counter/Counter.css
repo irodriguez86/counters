@@ -6,6 +6,11 @@
 
 .counter-text {
     font-size: 2.5em;
+    padding-bottom: 25px;
+}
+
+.counter-content {
+    margin-top: 10px;
 }
 
 .counter-button {
@@ -15,6 +20,8 @@
     color: white;
     border-radius: 50%;
     height: 1.5em;
+    line-height: 1.5em;
+    white-space: nowrap;
     width: 1.5em;
     cursor: pointer;
 }

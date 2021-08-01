@@ -1,19 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Counter.css";
 
-export default function Counter({value, onChange}) {
+export function Counter({value, onCounterChange}) {
+
+    const [count, setCount] = useState(value);
 
     const handleIncrement = () => {
-        onChange(1);
+        setCount(count + 1);
+        onCounterChange(1);
     }
 
     const handleDecrement = () => {
-        onChange(-1);
+        setCount(count -1);
+        onCounterChange(-1);
     }
 
     return (
         <div className="counter-wrapper">
-            <b className="counter-text">{value}</b>
+            <b className="counter-text">{count}</b>
             <div className="counter-content">
                 <button className="counter-button add-button" onClick={handleIncrement}>+</button>
                 <button className="counter-button subtract-button" onClick={handleDecrement}>-</button>
@@ -21,3 +25,5 @@ export default function Counter({value, onChange}) {
         </div>
     );
 }
+
+export const MemoizedCounter = React.memo(Counter);
